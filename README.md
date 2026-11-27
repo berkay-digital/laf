@@ -7,7 +7,7 @@
 <p>Hold a key and talk. Speech recognition runs on your computer,<br />and Laf learns your names and terms from the fixes you make.</p>
 
 <p>
-  <a href="https://github.com/berkay-digital/laf/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/berkay-digital/laf/ci.yml?branch=main&style=flat-square&label=CI" /></a>
+  <a href="https://github.com/berkay-digital/laf/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/berkay-digital/laf/actions/workflows/ci.yml/badge.svg?branch=main" /></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-FFC53D?style=flat-square" /></a>
   <img alt="macOS 14 or later on Apple Silicon" src="https://img.shields.io/badge/macOS-14%2B_Apple_Silicon-0B0E12?style=flat-square&logo=apple&logoColor=white" />
   <img alt="Windows 10 and 11" src="https://img.shields.io/badge/Windows-10_%7C_11-0B0E12?style=flat-square&logo=windows&logoColor=white" />
