@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the macOS app
+        run: ./macos/build.sh
+        env:
+          SIGN_IDENTITY: "-"
+          INSTALL: "0"
+          VERSION: ${{ github.ref_name }}
+      - name: Package
+        run: |
+          ditto -c -k --keepParent macos/build/Laf.app Laf-macOS.zip
+          mkdir -p dist/Laf-Windows
+          cp windows/laf.pyw windows/setup.ps1 windows/requirements.txt windows/README.md LICENSE dist/Laf-Windows/
+          (cd dist && zip -r ../Laf-Windows.zip Laf-Windows)
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            Laf-macOS.zip
+            Laf-Windows.zip
+          generate_release_notes: true

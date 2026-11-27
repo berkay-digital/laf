@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="You say: um so two things first update the readme no wait first bump the version and then update the readme. Laf types into Slack: So, two things: 1. Bump the version. 2. Update the README.">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC53D"/>
+      <stop offset="1" stop-color="#E09A12"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC53D" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#2A2D35"/>
+      <stop offset="1" stop-color="#E09A12" stop-opacity="0.55"/>
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .label { font-size: 12px; font-weight: 600; letter-spacing: 1.4px; fill: #8B919E; }
+      .raw { font-size: 18px; font-style: italic; fill: #A9AEB9; }
+      .out { font-size: 20px; font-weight: 500; fill: #F1EBE1; }
+      .chip { font-size: 13px; fill: #C9CDD5; }
+      .pill { font-size: 14px; font-weight: 600; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="318" rx="18" fill="#0D1015" stroke="url(#edge)" stroke-width="2"/>
+
+  <!-- You say -->
+  <rect x="32" y="32" width="384" height="256" rx="14" fill="#181B22"/>
+  <text x="56" y="68" class="label">YOU SAY</text>
+  <rect x="56" y="88" width="148" height="38" rx="19" fill="#2B2E37"/>
+  <g fill="#FFFFFF" opacity="0.92">
+    <rect x="70" y="104" width="3" height="6" rx="1.5"/>
+    <rect x="76" y="99" width="3" height="16" rx="1.5"/>
+    <rect x="82" y="96" width="3" height="22" rx="1.5"/>
+    <rect x="88" y="101" width="3" height="12" rx="1.5"/>
+    <rect x="94" y="98" width="3" height="18" rx="1.5"/>
+    <rect x="100" y="103" width="3" height="8" rx="1.5"/>
+    <rect x="106" y="100" width="3" height="14" rx="1.5"/>
+    <rect x="112" y="104" width="3" height="6" rx="1.5"/>
+    <rect x="118" y="105" width="3" height="4" rx="1.5"/>
+  </g>
+  <text x="132" y="112" class="pill">Listening</text>
+  <text class="raw">
+    <tspan x="56" y="164">um so two things first update the</tspan>
+    <tspan x="56" y="190">readme no wait first bump the</tspan>
+    <tspan x="56" y="216">version and then update the readme</tspan>
+  </text>
+  <rect x="56" y="238" width="196" height="32" rx="16" fill="#22252D"/>
+  <text x="72" y="259" class="chip">Speech on your Mac: 0.08 s</text>
+
+  <!-- Arrow -->
+  <circle cx="450" cy="160" r="22" fill="url(#brand)"/>
+  <path d="M441 160 H458 M451 152 L459 160 L451 168" stroke="#0B0E12" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Laf types -->
+  <rect x="484" y="32" width="384" height="256" rx="14" fill="#181B22"/>
+  <text x="508" y="68" class="label">LAF TYPES INTO SLACK</text>
+  <rect x="508" y="88" width="4" height="122" rx="2" fill="url(#brand)"/>
+  <text class="out">
+    <tspan x="528" y="112">So, two things:</tspan>
+    <tspan x="528" y="152">1. Bump the version.</tspan>
+    <tspan x="528" y="192">2. Update the README.</tspan>
+  </text>
+  <rect x="508" y="238" width="210" height="32" rx="16" fill="#22252D"/>
+  <text x="524" y="259" class="chip">Cleanup by your model: ~1 s</text>
+</svg>

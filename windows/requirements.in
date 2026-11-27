@@ -1,0 +1,7 @@
+keyboard
+sounddevice
+numpy
+pystray
+pillow
+uiautomation
+pywin32
