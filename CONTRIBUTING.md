@@ -9,6 +9,8 @@ Bug reports and pull requests are welcome. For a larger change, open an issue fi
 
 ## Tests
 
+`macos/smoke-test.sh` runs a built `Laf.app` end to end: the speech server transcribes a sentence spoken by `say`, and the app starts and writes its settings. Hotkeys, pasting and edit learning need Accessibility permission, so test those by hand.
+
 `python windows/laf.pyw --selftest` checks the word matching, prompt helpers and JSON parsing on any OS. With an API key in the settings file, it also sends a few sample dictations to the model and prints the results.
 
 ## Keeping the two apps in sync

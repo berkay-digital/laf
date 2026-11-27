@@ -15,6 +15,9 @@ jobs:
         env:
           SIGN_IDENTITY: "-"
           INSTALL: "0"
+      - name: Smoke test
+        run: ./macos/smoke-test.sh
+        timeout-minutes: 20
 
   windows:
     runs-on: windows-latest

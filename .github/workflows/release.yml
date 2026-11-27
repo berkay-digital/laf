@@ -18,6 +18,9 @@ jobs:
           SIGN_IDENTITY: "-"
           INSTALL: "0"
           VERSION: ${{ github.ref_name }}
+      - name: Smoke test
+        run: ./macos/smoke-test.sh
+        timeout-minutes: 20
       - name: Package
         run: |
           ditto -c -k --keepParent macos/build/Laf.app Laf-macOS.zip
